@@ -14,3 +14,13 @@ else
 end
 
 # puts "I'm writing Ruby programs!"
+
+=begin
+Remember, this is basically a short hand if statement. 
+It will do whatever you ask unless the condition is true.
+=end
+
+broken = false
+print "check check" unless broken
+
+# puts "check check" as variable broken is set to false therefore is equal to false
