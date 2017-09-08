@@ -29,3 +29,13 @@ If the remainder of i / 2 is zero, we go to the next iteration of the loop.
 Then we print the value of i. This line only prints out 1, 3, and 5 because of the previous line.
 ** To check if ODD: i % 2 == 1
 =end
+
+# A more useful iterator is the .each method, which can apply an expression to each element of an object, one at a time.
+
+object.each { |variable| 
+  # Do something 
+}
+# or
+object.each do |item| 
+  # Do something 
+end
