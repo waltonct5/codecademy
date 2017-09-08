@@ -32,10 +32,52 @@ Then we print the value of i. This line only prints out 1, 3, and 5 because of t
 
 # A more useful iterator is the .each method, which can apply an expression to each element of an object, one at a time.
 
-object.each { |variable| 
+object.each { |variable| puts variable
   # Do something 
 }
 # or
-object.each do |item| 
+object.each do |variable|
+  puts variable
   # Do something 
+end
+
+
+=begin ex: Use the .each method on the odds array to print out double the value of each item of the array. 
+In other words, multiply each item by 2. Make sure to use print rather than puts, so your output appears on one line.
+=end
+
+odds = [1,3,5,7,9]
+odds.each { |odds| print odds*2
+  }
+
+# .times method is like a super compact for loop: it can perform a task on each item in an object a specified number of times.
+
+10.times { print "Chunky bacon!" }
+
+# to note:
+# a WHILE loop can be converted into an UNTIL loop and also a FOR loop pretty easily:
+
+i = 1
+until i == 51
+  print i
+  i += 1
+end
+
+i = 1
+while i < 51
+  print i
+  i += 1
+end
+
+for i in 1...51
+  print i
+end
+
+# loop with LOOP
+
+i = 1
+loop do
+  i += 1
+  print "Ruby!"
+  break if i == 31
 end
