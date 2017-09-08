@@ -1,0 +1,31 @@
+=begin
+An *iterator* is just a Ruby method that repeatedly invokes a block of code
+The simplest iterator is the loop method. You can create a basic (but infinite!) loop by simply typing:
+
+loop { print "Hello, world!" }
+
+In Ruby, curly braces ({}) are generally interchangeable with the keywords do (to open the block) and end (to close it). 
+Knowing this, we can write a smarter loop than the one above:
+=end
+
+i = 0
+loop do
+  i += 1
+  print "#{i}"
+  break if i > 5
+end
+
+# break - breaks a loop as soon as its condition is met.
+# next - skip over certain steps in the loop.
+
+for i in 1..5
+  next if i % 2 == 0
+  print i
+end
+ 
+=begin
+In the above example, we loop through the range of 1 through 5, assigning each number to i in turn.
+If the remainder of i / 2 is zero, we go to the next iteration of the loop.
+Then we print the value of i. This line only prints out 1, 3, and 5 because of the previous line.
+** To check if ODD: i % 2 == 1
+=end
