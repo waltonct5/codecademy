@@ -219,3 +219,5 @@ Remember to pass &first_half to convert your lambda to a block!
 first_half = lambda { |n, v| v < 'M' }
 a_to_m = crew.select(&first_half)
 puts a_to_m
+
+=end
