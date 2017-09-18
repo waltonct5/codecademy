@@ -41,3 +41,9 @@ end
 
 # puts statement uses string interpolation to show the user their transformed string.
 puts "Here is your translation: #{user_input}"
+
+=begin
+Add an additional if statement to re-prompt the user for input if they don't enter anything
+Think about how you might account for words in which the letter "c" sounds like an "s"
+Think about how you might preserve the user's original capitalization
+=end
