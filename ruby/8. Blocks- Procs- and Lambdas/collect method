@@ -1,0 +1,22 @@
+# COLLECT METHOD 
+# There are a bunch of really useful Ruby methods that take blocks. One we haven't covered yet is collect.
+# - takes a block and applies the expression in the block to every element in an array. 
+# - Returns a COPY of my_nums, but doesn't change the original my_nums array. If we want to do that, we can use .collect! 
+
+my_nums = [1, 2, 3]
+my_nums.collect { |num| num ** 2 }
+# ==> [1, 4, 9]
+
+=begin
+We've created an array, fibs, and placed the first ten Fibonacci numbers in it.
+
+Create a new variable, doubled_fibs, and set it equal to the result of calling fibs.collect. 
+The block you pass to .collect should double each Fibonacci number, similar to the example above.
+
+fibs = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+# Add your code below!
+doubled_fibs = fibs.collect { |x| x * 2 } 
+puts doubled_fibs
+
+=end
